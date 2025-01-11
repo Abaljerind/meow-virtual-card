@@ -17,9 +17,9 @@ Follow these steps to get started with Meow Virtual Card:
 
 ```bash
 git clone https://github.com/Abaljerind/meow-virtual-card.git
-
- Navigate to the project directory:
 ```
+
+### Navigate to the project directory:
 
 cd meow-virtual-card
 
@@ -54,4 +54,4 @@ This project is licensed under the MIT License.
 
 Special thanks to the open-source community for their support and inspiration. 💖
 
-## Enjoy exploring virtual cards with Meow Virtual Card! 🐱
+### Enjoy exploring virtual cards with Meow Virtual Card! 🐱
