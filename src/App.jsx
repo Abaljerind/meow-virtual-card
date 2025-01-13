@@ -7,7 +7,9 @@ function App() {
         <Header />
         <Identity />
       </div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <Biodata />
+      </div>
     </div>
   );
 }
@@ -47,7 +49,17 @@ function Identity() {
   );
 }
 
-function Biodata() {}
+function Biodata() {
+  return (
+    <div className="desc">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque. Architecto, earum perspiciatis ducimus, eos quasi amet dolorem
+        deserunt illo enim aperiam, quae sapiente.
+      </p>
+    </div>
+  );
+}
 
 function Highlight() {}
 
