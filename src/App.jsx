@@ -1,5 +1,28 @@
 import "./index.css";
 
+const socialMedia = [
+  {
+    icon: "fa-facebook",
+    href: "https://www.facebook.com",
+  },
+  {
+    icon: "fa-instagram",
+    href: "https://www.instagram.com",
+  },
+  {
+    icon: "fa-twitter",
+    href: "https://www.twitter.com",
+  },
+  {
+    icon: "fa-linkedin",
+    href: "https://www.linkedin.com",
+  },
+  {
+    icon: "fa-github",
+    href: "https://www.github.com",
+  },
+];
+
 function App() {
   return (
     <div className="card">
