@@ -38,25 +38,30 @@ function App() {
   );
 }
 
-function SocialButton({ icon }) {
+function SocialButton({ icon, link }) {
   return (
-    <button>
+    <button onClick={() => window.open(link, "_blank")}>
       <i className={`fa ${icon}`}></i>
     </button>
   );
 }
 
 function Header() {
+  const middleIndex = Math.floor(socialMedia.length / 2);
+  const socialLeft = socialMedia.slice(0, middleIndex);
+  const socialRight = socialMedia.slice(middleIndex);
+
   return (
     <>
       <div className="social-buttons">
-        <SocialButton icon="fa-facebook" />
-        <SocialButton icon="fa-twitter" />
-        <SocialButton icon="fa-instagram" />
+        {socialLeft.map((media, index) => {
+          return <SocialButton icon={media.icon} link={media.href} key={index + 1} />;
+        })}
       </div>
       <div className="social-buttons right">
-        <SocialButton icon="fa-linkedin" />
-        <SocialButton icon="fa-github" />
+        {socialRight.map((media, index) => {
+          return <SocialButton icon={media.icon} link={media.href} key={index + 1} />;
+        })}
       </div>
     </>
   );
