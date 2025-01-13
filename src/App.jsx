@@ -9,6 +9,7 @@ function App() {
       </div>
       <div className="bottom">
         <Biodata />
+        <Highlight />
       </div>
     </div>
   );
@@ -61,6 +62,22 @@ function Biodata() {
   );
 }
 
-function Highlight() {}
+function Badge({ text }) {
+  return (
+    <button>
+      <div className="height">{text}</div>
+    </button>
+  );
+}
+
+function Highlight() {
+  return (
+    <div className="buttons">
+      <Badge text="PhD" />
+      <Badge text="Mountainer" />
+      <Badge text="3D Geek" />
+    </div>
+  );
+}
 
 export default App;
